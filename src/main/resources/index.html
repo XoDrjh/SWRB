@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> 软件可靠性模型 预测分析系统</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link href="assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/main-min.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+
+  <div class="header">
+    
+      <div class="dl-title">
+          <span class="lp-title-port">软件可靠性模型</span><span class="dl-title-text">预测分析系统</span>
+      </div>
+
+    <div class="dl-log">欢迎您，<span class="dl-log-user">XiaoJiahao</span><a href="###" title="退出系统" class="dl-log-quit">[退出]</a>
+    </div>
+  </div>
+   <div class="content">
+    <div class="dl-main-nav">
+      <div class="dl-inform"><div class="dl-inform-title">贴心小秘书<s class="dl-inform-icon dl-up"></s></div></div>
+      <ul id="J_Nav"  class="nav-list ks-clear">
+        <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">基础数据</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-order">经典模型</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-inventory">人工智能模型</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-supplier">模型对比分析</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-marketing">系统管理</div></li>
+      </ul>
+    </div>
+    <ul id="J_NavContent" class="dl-tab-conten">
+
+    </ul>
+   </div>
+  <script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
+  <script type="text/javascript" src="./assets/js/bui.js"></script>
+  <script type="text/javascript" src="./assets/js/config.js"></script>
+
+  <script>
+    BUI.use('common/main',function(){
+      var config = [{
+          id:'base-data',
+          homePage : 'hand-input',
+          menu:[{
+              text:'数据导入',
+              items:[
+                {id:'hand-input',text:'手动输入',href:'main/test.html'},
+                {id:'file-input',text:'文件导入',href:'main/test.html'},
+                {id:'database-input',text:'数据库导入',href:'main/test.html'}
+              ]
+            },{
+              text:'模型参数',
+              items:[
+                  {id:'model-params',text:'模型参数',href:'main/test.html'},
+                  {id:'modify-params',text:'参数修改',href:'main/test.html'}
+              ]
+          }]
+          },{
+            id:'classical-model',
+            menu:[{
+                text:'JM 模型',
+                items:[
+                    {id:'introduction-JM',text:'模型简介',href:'main/JM_introduce.html'},
+                    {id:'fail-data-JM',text:'失效数据',href:'main/test.html'},
+                    {id:'predictive-analytics-JM',text:'预测分析',href:'main/test.html'}
+                ]
+              },{
+                text:'GO 模型',
+                items:[
+                    {id:'introduction-GO',text:'模型简介',href:'main/GO_introduce.html'},
+                    {id:'fail-data-GO',text:'失效数据',href:'main/test.html'},
+                    {id:'predictive-analytics-GO',text:'预测分析',href:'main/test.html'}
+                ]
+            }]
+          },{
+            id:'AI-model',
+            menu:[{
+                text:'BP 模型',
+                items:[
+                    {id:'introduction1-BP',text:'模型简介',href:'main/BP_introduce.html'},
+                    {id:'fail-data1-BP',text:'失效数据',href:'main/test.html'},
+                    {id:'predictive-analytics-BP',text:'预测分析',href:'main/test.html'}
+                ]
+            }]
+          },{
+            id:'comparison',
+            menu:[{
+                text:'U 图对比分析',
+                items:[
+                  {id:'introduction-U',text:'U 图对比简介',href:'main/test.html'},
+                  {id:'compare-model-U',text:'选择对比模型',href:'main/test.html'},
+                  {id:'compare-result-U',text:'对比结果显示',href:'main/test.html'}
+                ]
+              },{
+                text:'Y 图对比分析',
+                items:[
+                    {id:'introduction-Y',text:'Y 图对比简介',href:'main/test.html'},
+                    {id:'compare-model-Y',text:'选择对比模型',href:'main/test.html'},
+                    {id:'compare-result-Y',text:'对比结果显示',href:'main/test.html'}
+                ]
+            },{
+                text:'PLR 图对比分析',
+                items:[
+                    {id:'introduction-PLR',text:'PLR 图对比简介',href:'main/test.html'},
+                    {id:'compare-model-PLR',text:'选择对比模型',href:'main/test.html'},
+                    {id:'compare-result-PLR',text:'对比结果显示',href:'main/test.html'}
+                ]
+            }]
+          },{
+            id : 'system-manage',
+            menu : [{
+              text : '用户管理',
+              items:[
+                  {id:'user-info',text:'用户信息',href:'detail/example.html'},
+                  {id:'user-register',text:'用户注册',href:'main/test.html'}
+              ]
+            }]
+          }];
+      new PageUtil.MainPage({
+        modulesConfig : config
+      });
+    });
+  </script>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
